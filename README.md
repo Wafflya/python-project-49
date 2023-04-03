@@ -1,6 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Wafflya/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/Wafflya/python-project-49/actions)
-
+<a href="https://codeclimate.com/github/Wafflya/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/0b4d34ee5c7cd09fdf8f/maintainability" /></a>
 
 ### Проект: Игры разума
 #### Системные требования:
