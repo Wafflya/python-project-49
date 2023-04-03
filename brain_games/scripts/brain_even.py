@@ -10,7 +10,7 @@ def main():
     for _ in range(3):
         number = random.randint(1, 30)
         answer = ask_question(number)
-        correct = check_answer(answer, "yes" if number % 2 == 1 else "no", name)
+        correct = check_answer(answer, "yes" if number % 2 == 0 else "yes", name)
         if not correct:
             return
     print(f"Congratulations, {name}!")
