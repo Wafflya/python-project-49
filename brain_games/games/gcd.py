@@ -11,7 +11,7 @@ def create_question():
     number_b = random.randint(1, 150)
     # "Вычисляем" правильный ответ
     right_answer = gcd(number_a, number_b)
-    yield f"{number_a} {number_b}", right_answer
+    return f"{number_a} {number_b}", right_answer
 
 
 def main():

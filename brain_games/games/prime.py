@@ -20,7 +20,7 @@ def create_question():
     number = random.randint(1, 200)
     # "Вычисляем" правильный ответ
     right_answer = isprime(number)
-    yield f"{number}", right_answer
+    return f"{number}", right_answer
 
 
 def main():

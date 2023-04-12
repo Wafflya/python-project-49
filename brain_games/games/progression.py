@@ -12,7 +12,7 @@ def create_question():
     deleted_index = random.randint(0, 9)
     deleted_element = result_progression[deleted_index]
     result_progression[deleted_index] = ".."
-    yield " ".join(result_progression), deleted_element
+    return " ".join(result_progression), deleted_element
 
 
 def main():
