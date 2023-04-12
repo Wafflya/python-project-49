@@ -10,7 +10,7 @@ def create_question():
     number = random.randint(1, 30)
     # "Вычисляем" правильный ответ
     right_answer = "yes" if number % 2 == 0 else "no"
-    yield f"{number}", right_answer
+    return f"{number}", right_answer
 
 
 def main():
