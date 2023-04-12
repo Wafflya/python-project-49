@@ -5,11 +5,25 @@ description = "Brain-game python-project for hexlet."
 authors = ["Marat <vmarat95@gmail.com>"]
 readme = "README.md"
 packages = [
-  { include = "brain_games" },
+    { include = "brain_games" },
 ]
-repository = "https://github.com/Wafflya/python_pract"
-
-
+repository = "https://github.com/Wafflya/python-project-49"
+classifiers = [
+    "Development Status :: 1 - Alfa",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "License :: Free :: Marassimus License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Fun :: Brain Games",
+    "Intended Audience :: Kids",
+    "Intended Audience :: Education",
+]
 [tool.poetry.dependencies]
 python = "^3.10"
 prompt = "^0.4.1"
