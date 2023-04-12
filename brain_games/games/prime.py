@@ -24,5 +24,6 @@ def create_question():
 
 
 def main():
-    play_game('Answer "yes" if given number is prime. Otherwise answer "no".', create_question)
-
+    play_game(
+        'Answer "yes" if given number is prime. Otherwise answer "no".',
+        create_question)

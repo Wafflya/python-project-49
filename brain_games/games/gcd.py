@@ -1,5 +1,6 @@
 import random
 from math import gcd
+
 from brain_games.games.engine import play_game
 
 
@@ -15,5 +16,7 @@ def create_question():
 
 
 def main():
-    play_game('Find the greatest common divisor of given numbers.', create_question)
-
+    play_game(
+        'Find the greatest common divisor of given numbers.',
+        create_question
+    )

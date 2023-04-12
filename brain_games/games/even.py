@@ -4,7 +4,8 @@ from brain_games.games.engine import play_game
 
 
 def create_question():
-    """ Создаёт вопрос для задания и возвращает его вместе с верным ответом """
+    """ Создаёт вопрос для задания и
+    возвращает его вместе с верным ответом """
 
     # Берём случайное число
     number = random.randint(1, 30)
@@ -14,4 +15,6 @@ def create_question():
 
 
 def main():
-    play_game('Answer "yes" if the number is even, otherwise answer "no".', create_question)
+    play_game(
+        'Answer "yes" if the number is even, otherwise answer "no".',
+        create_question)
