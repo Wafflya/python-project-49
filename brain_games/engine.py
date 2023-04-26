@@ -1,18 +1,12 @@
 import prompt
 
 
-def welcome():
-    """ Приветствует пользователя, возвращает его имя """
-    print("Welcome to the Brain Games!")
-    name = prompt.string('May I have your name? ')
-    print(f"Hello, {name}")
-    return name
-
-
 def play_game(header, question_func, count=3):
     """ Основная функция движка игры. Принимает название игры,
     функцию создающую вопрос и кол-во вопросов (3 по-умолчанию)"""
-    username = welcome()
+    print("Welcome to the Brain Games!")
+    username = prompt.string('May I have your name? ')
+    print(f"Hello, {username}")
     print(header)
     for i in range(count):
         # Вызываем функцию для получения текста вопроса и ответ

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-from brain_games.games.prime import main
+from brain_games.games.prime import start_game
 
 
 if __name__ == "__main__":
-    main()
+    start_game()
