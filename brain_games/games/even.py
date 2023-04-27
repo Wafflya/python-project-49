@@ -10,6 +10,12 @@ MIN_NUMBER = 1
 MAX_NUMBER = 30
 
 
+def is_even(number):
+    if number % 2 == 0:
+        return True
+    return False
+
+
 def create_question_with_right_answer():
     """ Создаёт вопрос для задания и
     возвращает его вместе с верным ответом """
@@ -17,7 +23,7 @@ def create_question_with_right_answer():
     # Берём случайное число
     number = random.randint(MIN_NUMBER, MAX_NUMBER)
     # "Вычисляем" правильный ответ
-    right_answer = "yes" if number % 2 == 0 else "no"
+    right_answer = "yes" if is_even(number) else "no"
     return f"{number}", right_answer
 
 
