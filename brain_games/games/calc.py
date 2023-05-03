@@ -41,6 +41,3 @@ def create_question_with_right_answer():
 
 def start_game():
     play_game(GAME_NAME, create_question_with_right_answer)
-
-
-start_game()
