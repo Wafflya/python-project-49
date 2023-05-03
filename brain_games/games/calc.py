@@ -11,6 +11,14 @@ MIN_NUMBER = 1
 MAX_NUMBER = 20
 
 
+def get_right_answer(operand, first_number, second_number):
+    """
+    Принимет математическое действие и два числа.
+    Возвращает результат переданной операции с переданными числами.
+    """
+    return operand(first_number, second_number)
+
+
 def create_question_with_right_answer():
     """ Создаёт вопрос для задания и возвращает его вместе с верным ответом """
 
@@ -27,9 +35,12 @@ def create_question_with_right_answer():
     number_a = random.randint(MIN_NUMBER, MAX_NUMBER)
     number_b = random.randint(MIN_NUMBER, MAX_NUMBER)
     # Считаем правильный ответ
-    right_answer = operands[operand](number_a, number_b)
+    right_answer = get_right_answer(operands[operand], number_a, number_b)
     return f"{number_a} {operand} {number_b}", right_answer
 
 
 def start_game():
     play_game(GAME_NAME, create_question_with_right_answer)
+
+
+start_game()
